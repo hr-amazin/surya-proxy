@@ -47,6 +47,7 @@ html, body{
     height: 400px;
     min-width : 1000px;
     background-color: white;
+    text-align: center;
 }
 
 .footer {

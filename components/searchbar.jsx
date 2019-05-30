@@ -30,9 +30,9 @@ export default class Search extends React.Component {
         
         </div>
     
-        <form class="nav-search">
+        <form className="nav-search">
         <select>
-           {this.state.categories.map(el => (<option value={el}>{el}</option>))}
+           {this.state.categories.map((el, i) => (<option key={i} value={el}>{el}</option>))}
         </select>
         <input type="text" value={this.state.value} onChange={this.handleChange} />
         <input type="submit" value="Submit" />

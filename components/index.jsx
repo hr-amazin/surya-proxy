@@ -57,20 +57,18 @@ const Main = ()=> {
       
   return (
     <>
-    
     <form onSubmit={handleSubmit}>
       <input type="text" onChange={(e)=>{e.preventDefault(); setText(e.target.value)}}/>
       <input type="submit"/>
     </form>
-    <div class="header"><Search/></div>
-    <div class="body">
-    <div class="graph" id="image"><Images uuid={uuid}/></div> 
-    <div class="description" id="description"><Description id={uuid}/></div>
-    <div class="action">Action</div>
+    <div className="header"><Search/></div>
+    <div className="body">
+    <div className="graph" id="image"><Images uuid={uuid}/></div> 
+    <div className="description" id="description"><Description id={uuid}/></div>
+    <div className="action">Action</div>
     </div>
-    <div class="carousel">Carousel</div>
-    <div class="footer">Review and Ratings</div>
-    
+    <div className="carousel"><Carousel uuid={uuid} setUuid={setUuid}/></div>
+    <div className="footer">Review and Ratings</div>
     </>
   );
 
