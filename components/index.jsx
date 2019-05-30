@@ -47,7 +47,7 @@ import Search from './searchbar.jsx'
 
 
 const Main = ()=> {
-  const [uuid, setUuid] = useState(1050);
+  const [uuid, setUuid] = useState(1001);
   const [text, setText] = useState('');
 
   function handleSubmit(e){
